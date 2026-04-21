@@ -1,0 +1,614 @@
+.explanation-incorrect {
+  color: #ff3c3c;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.01em;
+}
+.explanation-correct {
+  color: #00ffe7;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.01em;
+}
+.explanation-complete {
+  margin: 0.7rem 0 0.7rem 0;
+  font-size: 1.08rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  color: #00ffe7;
+}
+.explanation-complete-label {
+  font-weight: bold;
+  color: #90caf9;
+  margin-right: 0.5rem;
+}
+.explanation-complete-code {
+  background: #181830;
+  color: #00ffe7;
+  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.explanation-wrong .explanation-complete-code {
+  color: #ff3c3c;
+}
+.explanation-box {
+  margin-top: 1.2rem;
+  color: #00ffe7;
+  background: #232946;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  font-size: 1.08rem;
+  box-shadow: 0 0 8px #00ffe7;
+  border: 2px solid #00ffe7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.explanation-wrong {
+  color: #ff3c3c;
+  border: 2px solid #ff3c3c;
+  box-shadow: 0 0 8px #ff3c3c44;
+}
+.explanation-list {
+  margin: 0.7rem 0 0.7rem 1.2rem;
+  padding: 0;
+  list-style: decimal;
+  font-size: 1.01rem;
+}
+.explanation-block {
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  background: #181830;
+  color: #00ffe7;
+  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  font-weight: 700;
+}
+.explanation-wrong .explanation-block {
+  color: #ff3c3c;
+  background: #2d2d3c;
+}
+.explanation-detail {
+  font-style: italic;
+  color: #90caf9;
+  margin-left: 0.5rem;
+}
+.explanation-summary {
+  margin-top: 0.7rem;
+  color: #00ffe7;
+  font-size: 1.01rem;
+}
+.explanation-wrong .explanation-summary {
+  color: #ff3c3c;
+}
+.feedback-container {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+.try-again-btn {
+  margin-top: 0.2rem;
+}
+.try-again-btn {
+  background: linear-gradient(90deg, #ff3c3c 60%, #ffb347 100%);
+  color: #232946;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px 0 #ff3c3c44;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 1.1rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+.try-again-btn:focus {
+  outline: 2.5px solid #ff3c3c;
+  outline-offset: 2px;
+}
+.how-to-play-btn {
+  background: linear-gradient(90deg, #00bfff 60%, #00ffe7 100%);
+  color: #232946;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 1.1rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.how-to-play-btn:focus {
+  outline: 2.5px solid #00ffe7;
+  outline-offset: 2px;
+}
+.how-to-play-btn[aria-expanded="true"] {
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  color: #232946;
+}
+.instruction-message {
+  margin-top: 0.5rem;
+}
+.question-prompt {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(90deg, #232946 80%, #181830 100%);
+  color: #00ffe7;
+  border: 2.5px solid #00ffe7;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #00ffe799, 0 0 8px #00ffe7;
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 1.3rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.13rem;
+  letter-spacing: 0.03em;
+}
+.question-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 0 6px #00ffe7);
+}
+.question-text {
+  flex: 1;
+  font-weight: 700;
+}
+.instruction-message {
+  background: linear-gradient(90deg, #181830 80%, #232946 100%);
+  color: #00ffe7;
+  border: 2.5px solid #00ffe7;
+  border-radius: 16px;
+  padding: 1.1rem 1.5rem 1.1rem 1.5rem;
+  margin-bottom: 1.3rem;
+  font-size: 1.08rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  box-shadow: 0 0 16px #00ffe799, 0 0 8px #00ffe7;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+.instruction-icon {
+  font-size: 2.2rem;
+  margin-top: 0.2rem;
+  filter: drop-shadow(0 0 6px #00ffe7);
+}
+.instruction-text {
+  flex: 1;
+}
+.instruction-text ul {
+  margin: 0.5rem 0 0.5rem 1.2rem;
+  padding: 0;
+  list-style: disc;
+  font-size: 1.01rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.instruction-text li {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+.instruction-encourage {
+  margin-top: 0.7rem;
+  color: #00ffe7;
+  font-size: 1.05rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  text-shadow: 0 0 8px #00ffe7;
+  letter-spacing: 0.04em;
+}
+.feedback-correct {
+  color: #00ffe7;
+  text-shadow: 0 0 6px #00ffe7;
+}
+.feedback-mistake {
+  color: #ff3c3c;
+  text-shadow: 0 0 6px #ff3c3c;
+  font-weight: 700;
+  background: #2d2d3c;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: 2px solid #ff3c3c;
+  box-shadow: 0 0 8px #ff3c3c44;
+}
+/* Game Style Code Assembly Box */
+.assembly-box {
+  background: #181830;
+  border: 2.5px solid #00ffe7;
+  border-radius: 18px;
+  box-shadow: 0 0 16px #00ffe799, 0 0 8px #00ffe7;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.2rem;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+.assembly-label {
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.02rem;
+  color: #00ffe7;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+.assembly-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.assembly-block-wrapper {
+  display: inline-block;
+}
+.assembly-block {
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  color: #232946;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1.08rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: 700;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.assembly-block:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+/* Game Style Submit and Nav Buttons */
+.submit-btn, .nav-btn {
+  background: linear-gradient(90deg, #00bfff 60%, #00ffe7 100%);
+  color: #232946;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.completed-btns {
+  margin-bottom: 1rem;
+}
+.feedback {
+  margin-top: 1rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #00ffe7;
+  text-shadow: 0 0 6px #00ffe7;
+}
+.example-box {
+  margin-top: 1rem;
+  color: #00ffe7;
+  background: #232946;
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.01rem;
+  box-shadow: 0 0 8px #00ffe7;
+}
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a40 0%, #2d2d7b 100%);
+  color: #f8f8ff;
+  min-height: 100vh;
+}
+
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: none;
+}
+
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(160deg, #232946 60%, #3e4a7b 100%);
+  color: #fff;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 0 24px 0 #00ffe7aa, 2px 0 16px 0 #23294622;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.progress-bar {
+  margin-bottom: 1.5rem;
+  background: #181830;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 #00ffe744, 0 0 8px #00ffe7;
+  padding: 1.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 2px solid #00ffe7;
+}
+
+
+.task-area {
+  background: #232946;
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 32px 0 #00ffe744, 0 0 8px #00ffe7;
+  border: 2px solid #00ffe7;
+  transition: box-shadow 0.2s;
+}
+.task-area:hover {
+  box-shadow: 0 8px 48px 0 #00ffe799, 0 0 16px #00ffe7;
+}
+
+
+.code-block {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background: #181830;
+  color: #00ffe7;
+  border: 2px solid #00ffe7;
+  border-radius: 16px;
+  font-size: 1.08rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  transition: background 0.2s, box-shadow 0.2s, border 0.2s, color 0.2s;
+}
+.code-block.selected, .code-block:hover {
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  color: #232946;
+  border: 2px solid #00bfff;
+  box-shadow: 0 4px 16px 0 #00ffe799;
+}
+
+
+.hint-button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(90deg, #00bfff 60%, #00ffe7 100%);
+  color: #232946;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.hint-button:hover {
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  box-shadow: 0 4px 16px 0 #00ffe799;
+}
+
+
+.dashboard {
+  background: #181830;
+  color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 #00ffe744, 0 0 8px #00ffe7;
+  border: 2px solid #00ffe7;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s;
+}
+.dashboard:hover {
+  box-shadow: 0 8px 48px 0 #00ffe799, 0 0 16px #00ffe7;
+}
+
+/* Game Style Sidebar Button */
+.sidebar-btn {
+  background: transparent;
+  color: #00ffe7;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0.9rem 0 0.9rem 0.7rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  border-radius: 12px;
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-btn.active,
+.sidebar-btn:hover {
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  color: #232946;
+  font-weight: 700;
+}
+.sidebar-checkmark {
+  margin-left: 0.7em;
+  font-size: 1em;
+  color: #00ffe7;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00ffe7;
+}
+
+/* Game Style Dashboard Button */
+.dashboard-btn {
+  background: #232946;
+  color: #00ffe7;
+  border: 2px solid #00ffe7;
+  border-radius: 12px;
+  padding: 0.7rem 1.5rem;
+  margin: 0.25rem 0;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  transition: background 0.2s, color 0.2s, font-weight 0.2s, box-shadow 0.2s;
+}
+.dashboard-btn.completed,
+.dashboard-btn:hover {
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  color: #232946;
+  font-weight: 700;
+  box-shadow: 0 4px 16px 0 #00ffe799;
+}
+.dashboard-checkmark {
+  margin-left: 0.7em;
+  font-size: 1em;
+  color: #00ffe7;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00ffe7;
+}
+
+/* Game Style Progress Bar */
+.progress-bar-label {
+  margin-bottom: 0.5rem;
+}
+.progress-bar-track {
+  height: 16px;
+  background: #232946;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  border: 2px solid #00ffe7;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffe7 60%, #00bfff 100%);
+  border-radius: 8px 0 0 8px;
+  transition: width 0.3s;
+  box-shadow: 0 0 8px #00ffe7;
+}
+
+/* Module Intro */
+.module-intro {
+  margin-bottom: 1.2rem;
+  background: linear-gradient(90deg, #232946 80%, #181830 100%);
+  color: #00ffe7;
+  border: 2.5px solid #00ffe7;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #00ffe799, 0 0 8px #00ffe7;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.13rem;
+  letter-spacing: 0.03em;
+}
+.module-intro h2 {
+  color: #90caf9;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.module-intro ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  font-size: 1.08rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.module-intro li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Module Intro Toggle Button */
+.module-intro-toggle {
+  background: linear-gradient(90deg, #00bfff 60%, #00ffe7 100%);
+  color: #232946;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 1.1rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+.module-intro-toggle:focus {
+  outline: 2.5px solid #00ffe7;
+  outline-offset: 2px;
+}
+.module-intro-content {
+  background: linear-gradient(90deg, #232946 80%, #181830 100%);
+  color: #00ffe7;
+  border: 2.5px solid #00ffe7;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #00ffe799, 0 0 8px #00ffe7;
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.13rem;
+  letter-spacing: 0.03em;
+}
+.module-intro-content h2 {
+  color: #90caf9;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.module-type {
+  color: #ffb347;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  letter-spacing: 0.02em;
+}
+.module-intro-content ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  font-size: 1.08rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.module-intro-content li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Dashboard Toggle Button */
+.dashboard-toggle-btn {
+  background: linear-gradient(90deg, #00bfff 60%, #00ffe7 100%);
+  color: #232946;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px 0 #00ffe744;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 1.1rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  display: inline-block;
+}
+.dashboard-toggle-btn:focus {
+  outline: 2.5px solid #00ffe7;
+  outline-offset: 2px;
+}
